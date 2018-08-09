@@ -5,6 +5,7 @@ import React from 'react';
 import { StyleSheet, Text, View, ViewPropTypes } from 'react-native';
 
 import moment from 'moment';
+require("moment/locale/vi");
 
 import Color from './Color';
 import { TIME_FORMAT } from './Constant';

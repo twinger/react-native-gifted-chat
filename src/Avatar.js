@@ -3,7 +3,7 @@ import React from 'react';
 import { StyleSheet, View, ViewPropTypes } from 'react-native';
 import GiftedAvatar from './GiftedAvatar';
 import { isSameUser, isSameDay } from './utils';
-
+const size = 32;
 const styles = {
   left: StyleSheet.create({
     container: {
@@ -14,9 +14,9 @@ const styles = {
     },
     onBottom: {},
     image: {
-      height: 36,
-      width: 36,
-      borderRadius: 18,
+      height: size,
+      width: size,
+      borderRadius: size / 2,
     },
   }),
   right: StyleSheet.create({
@@ -28,9 +28,9 @@ const styles = {
     },
     onBottom: {},
     image: {
-      height: 36,
-      width: 36,
-      borderRadius: 18,
+      height: size,
+      width: size,
+      borderRadius: size / 2,
     },
   }),
 };
@@ -106,7 +106,7 @@ Avatar.defaultProps = {
   nextMessage: {},
   containerStyle: {},
   imageStyle: {},
-  onPressAvatar: () => {},
+  onPressAvatar: () => { },
 };
 
 Avatar.propTypes = {
